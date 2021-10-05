@@ -1,1 +1,5 @@
-var coucou = 3;
+// load vendors
+
+import jQuery from 'jquery';
+
+$('#placeholder').text('this is working');
