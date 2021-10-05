@@ -33,7 +33,7 @@ module.exports = function makeWebpackConfig() {
    */
   config.resolve = {
     alias: {
-      '@': path.resolve('./app')
+      '@': path.resolve('./src')
     },
     fallback: {
       'fs': false,
@@ -48,7 +48,7 @@ module.exports = function makeWebpackConfig() {
    * Karma will set this when it's a test build
    */
   config.entry = isTest ? void 0 : {
-    app: './app/index.js'
+    src: './src/index.js'
   };
 
   /**
@@ -247,7 +247,7 @@ module.exports = function makeWebpackConfig() {
     // Render index.html
     config.plugins.push(
       new HtmlWebpackPlugin({
-        template: './app/index.html',
+        template: './src/index.html',
         inject: 'body'
       })
 
