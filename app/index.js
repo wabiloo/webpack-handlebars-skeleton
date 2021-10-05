@@ -1,5 +1,7 @@
-// load vendors
+// css
+import './index.scss'
 
+// load vendors
 import jQuery from 'jquery';
 
-$('#placeholder').text('this is working');
+jQuery('#placeholder').text('this is working');
